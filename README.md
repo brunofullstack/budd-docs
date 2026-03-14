@@ -4,7 +4,7 @@ Claro! Aqui está um README.md completo e profissional para ensinar sua equipe a
 
 # 📖 Budd Documentação
 
-Bem-vindo ao repositório de documentação do [Nome do Projeto]! Este guia vai te ensinar tudo o que você precisa saber para **usar**, **contribuir** e **manter** nossa documentação escrita com MkDocs.
+Bem-vindo ao repositório de documentação Budd! Este guia vai te ensinar tudo o que você precisa saber para **usar**, **contribuir** e **manter** nossa documentação escrita com MkDocs.
 
 ## 📋 Índice
 
@@ -79,7 +79,7 @@ Nossa documentação é construída com **[MkDocs](https://www.mkdocs.org/)** e 
 
 ```bash
 # Clone o repositório
-git clone https://github.com/sua-empresa/nome-do-projeto-docs.git
+git clone https://github.com/brunofullstack/budd-docs.git
 
 # Entre na pasta do projeto
 cd nome-do-projeto-docs
