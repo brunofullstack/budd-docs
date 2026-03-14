@@ -1,0 +1,177 @@
+site_name: Budd Documentation
+site_url: https://www.buddapp.com/
+theme:
+  name: material
+  language: pt-BR
+  logo: assets/budd-logo.png
+  favicon: assets/favicon.ico
+  palette:
+    # Esquema escuro (padrão) - com verde Budd
+    - scheme: slate
+      primary: black
+      accent: green
+      toggle:
+        icon: material/weather-night
+        name: Ativar modo claro
+    # Esquema claro (opcional) - mantendo a identidade verde
+    - scheme: default
+      primary: green
+      accent: green
+      toggle:
+        icon: material/weather-sunny
+        name: Ativar modo escuro
+  icon:
+    logo: material/leaf-circle
+    repo: fontawesome/brands/github
+    edit: material/pencil
+    view: material/eye
+  font:
+    text: Ubuntu
+    code: Roboto Mono
+  features:
+    - navigation.tabs
+    - navigation.tabs.sticky
+    - navigation.sections
+    - navigation.expand
+    - navigation.path
+    - navigation.instant
+    - navigation.instant.prefetch
+    - navigation.top
+    - navigation.tracking
+    - search.highlight
+    - search.share
+    - search.suggest
+    - content.code.copy
+    - content.code.annotate
+    - content.tabs.link
+    - content.tooltips
+    - announce.dismiss
+    - header.autohide
+    - toc.follow
+
+# Plugins essenciais
+plugins:
+  - search
+  - tags
+  # - git-revision-date-localized:
+  #     enable_creation_date: true
+  - minify:
+      minify_html: true
+
+# Extensões Markdown
+markdown_extensions:
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.critic
+  - pymdownx.caret
+  - pymdownx.keys
+  - pymdownx.mark
+  - pymdownx.tilde
+  - pymdownx.tabbed:
+      alternate_style: true
+  - attr_list
+  - md_in_html
+  - footnotes
+  - tables
+  - def_list
+  - pymdownx.tasklist:
+      custom_checkbox: true
+      clickable_checkbox: true
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+
+extra_css:
+  - stylesheets/budd_theme.css
+
+# Configurações extras
+extra:
+  generator: false
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/buddapp
+      name: Budd no GitHub
+    - icon: fontawesome/brands/linkedin
+      link: https://linkedin.com/company/buddapp
+      name: Budd no LinkedIn
+    - icon: fontawesome/brands/instagram
+      link: https://instagram.com/buddapp
+      name: Budd no Instagram
+  consent:
+    title: Consentimento de Cookies
+    description: >- 
+      Utilizamos cookies para reconhecer suas visitas e preferências, 
+      além de medir a audiência do site. Ao clicar em "Aceitar todos", 
+      você concorda com o uso de todos os cookies.
+  version:
+    provider: mike
+    default: stable
+  analytics:
+    provider: google
+    property: UA-XXXXXXXXX-X
+    feedback:
+      title: Esta documentação foi útil?
+      ratings:
+        - icon: material/emoticon-happy-outline
+          name: Sim
+          data: 1
+          note: >-
+            Obrigado pelo feedback!
+          type: positive
+        - icon: material/emoticon-sad-outline
+          name: Não
+          data: 0
+          note: >-
+            Agradecemos seu feedback! Ajude-nos a melhorar 
+            <a href="https://github.com/buddapp/docs/issues/new" 
+               target="_blank" rel="noopener">criando uma issue</a>.
+          type: negative
+
+# Copyright
+copyright: Copyright &copy; 2024 Budd App
+
+# Repositório (se aplicável)
+repo_url: https://github.com/buddapp/budd-docs
+repo_name: buddapp/budd-docs
+edit_uri: edit/main/docs/
+
+# Navegação
+nav:
+  - Sobre: index.md
+  - Backend: backend.md
+  - Budd User:
+    - Visão Geral: user/overview.md
+    - Primeiros Passos: user/getting-started.md
+    - Funcionalidades: user/features.md
+    - FAQ: user/faq.md
+  - Budd Gestor:
+    - Visão Geral: gestor/overview.md
+    - Dashboard: gestor/dashboard.md
+    - Gerenciamento: gestor/management.md
+    - Relatórios: gestor/reports.md
+  - API:
+    - Autenticação: api/authentication.md
+    - Endpoints: api/endpoints.md
+    - Webhooks: api/webhooks.md
+    - Exemplos: api/examples.md
+  - Sobre:
+    - Budd: about/budd.md
+    - Contato: about/contact.md
+    - Termos de Uso: about/terms.md
+    - Privacidade: about/privacy.md
+
+# Validação de links
+validation:
+  omitted_files: warn
+  absolute_links: warn
+  unrecognized_links: warn
+
+# hooks:
+#   - hooks/shortcodes.py
