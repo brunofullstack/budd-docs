@@ -1,7 +1,3 @@
-Claro! Aqui está um README.md completo e profissional para ensinar sua equipe a trabalhar com a documentação do projeto.
-
----
-
 # 📖 Budd Documentação
 
 Bem-vindo ao repositório de documentação Budd! Este guia vai te ensinar tudo o que você precisa saber para **usar**, **contribuir** e **manter** nossa documentação escrita com MkDocs.
